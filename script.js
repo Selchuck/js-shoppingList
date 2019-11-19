@@ -1,7 +1,7 @@
-let button = document.getElementById("btn-enter");
+let buttonEnter = document.getElementById("btn-enter");
+let buttonClear=document.getElementById("btn-clear");
 let input = document.getElementById("userinput");
 const ul = document.querySelector("ul");
-let btn=document.createElement("button");
 
 function inputLength () {
   return input.value.length
@@ -26,7 +26,10 @@ function addListAfterKeypress(event) {
   }
 }
 
+function clearList() {
+    ul.innerHTML = "";
+}
 
-button.addEventListener("click", addListAfterClick);
-
+buttonClear.addEventListener("click", clearList);
+buttonEnter.addEventListener("click", addListAfterClick);
 input.addEventListener("keypress", addListAfterKeypress);
