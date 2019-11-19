@@ -6,8 +6,14 @@ body {
   background-color: #ffff0021;
 }
 
-h1, p, li {
+h1 {
+  font-size: 4rem;
+}
+
+p, li {
   color: #fff;
+  margin-top: 5px;
+  padding: 4px;
 }
 
 ul {
@@ -19,6 +25,7 @@ ul {
 button {
   color: #fff;
   background: #9e2089;
+  margin-left: 4px;
   padding: 4px;
   border-radius: 4px;
 }
@@ -27,14 +34,14 @@ button:hover {
   cursor: pointer;
 }
 
+.deleteButton {
+  background-color: #000;
+  color: #fff;
+}
 
 input {
   border-radius: 3px;
   padding: 3px;
-}
-header {
-  font-family: 'Pacifico', cursive;
-  font-size: 2em;
 }
 
 .wrapper {
@@ -50,3 +57,8 @@ section {
   font-family: 'Oswald', sans-serif;
   font-weight: 600;
 }
+
+.done {
+  text-decoration: line-through #000;
+}
+
